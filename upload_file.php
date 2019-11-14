@@ -28,7 +28,7 @@ if ($_FILES["file"]["size"] < 20480000)
 
 			$targetfile = $targetdir.$_FILES['file']['name'];
 
-			move_uploaded_file($_FILES["file"]["tmp_name"], $targetfile);
+			move_uploaded_file($_FILES['file']['tmp_name'], $targetfile);
 			echo "save as: " . "upload/" . $_FILES["file"]["name"];
 
 			header("Refresh:5;url=/up/upload/");
