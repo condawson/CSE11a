@@ -45,7 +45,7 @@ session_start();
 <form enctype="multipart/form-data" action="upload_file.php" method="post">
 	<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
 	Upload this file: <input type="file" name="file" />
-	<input type="submit" value="convert" />
+	<input type="submit" value="submit file" />
 </form>
 
 
