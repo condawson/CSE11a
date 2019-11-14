@@ -24,11 +24,11 @@ if ($_FILES["file"]["size"] < 20480000)
 		else
 		{
 			// 如果 upload 目录不存在该文件则将文件上传到 upload 目录下
-			$targetdir = 'CSE11a/';
+			$targetdir = '/CSE11a';
 
-			$targetfile = $targetdir . basename( $_FILES['file']['name']);
+			$targetfile = $targetdir/basename( $_FILES['file']['name']);
 
-			move_uploaded_file($_FILES['file']['tmp'], $targetfile);
+			move_uploaded_file($_FILES['file']['/tmp'], $targetfile);
 			echo "save as: " . "upload/" . $_FILES["file"]["name"];
 
 			header("Refresh:5;url=/up/upload/");
