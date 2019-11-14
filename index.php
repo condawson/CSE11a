@@ -39,7 +39,7 @@ session_start();
 
 <div class="topnav">
   <input class="search-field" type="text" placeholder="Search">
-  <button type="submit" class=""><img class="icon" src=img/icon.png></button>
+  <button type="submit" class=""><img class="icon" src=icon.png></button>
 </div>
 
 <form class="upload" action="upload_file.php" method="post" enctype="multipart/form-data">
