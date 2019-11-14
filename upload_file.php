@@ -24,7 +24,7 @@ if ($_FILES["file"]["size"] < 20480000)
 		else
 		{
 			// 如果 upload 目录不存在该文件则将文件上传到 upload 目录下
-			$targetdir = '/CSE11a/';
+			$targetdir = '/uploads/';
 
 			$targetfile = $targetdir.$_FILES['file']['name'];
 
